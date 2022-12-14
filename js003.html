@@ -29,17 +29,20 @@
     
     var nota1 = Number(window.prompt("Entre com a nota 1")) // se usar o prompt retorna string
     var nota2 = Number(window.prompt("Entre com a nota 2"))
-    var media = nota1 + nota2 
+    var total = nota1 + nota2 
     // Number.parseInt(n)  - podemos utilizar somente o Number para Int e Float. 
     // Number.parseFloat(n)
-     // Numero para String = String(n) ou n.toString()
-    
+    // Numero para String = String(n) ou n.toString()
+    // template string = placeholder $ = 'O aluno ${nome} com ${idade} tirou a nota $`{nota}'
 
-    alert('A media final é: ' + media) // + serve para concatenar e adicionar
+    alert('O total final é: ' + total) // + serve para concatenar e adicionar
+    // nova saida    
+    alert(`A soma de ${nota1} + ${nota2} totaliza em: ${total}`) // + serve para concatenar e adicionar
+
+    // s.length / s.toUpperCase() / s.toLowerCase()
+
 
 
     </script>
-
-
 </body>
 </html>
