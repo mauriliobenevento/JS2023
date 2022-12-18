@@ -23,15 +23,88 @@
 </head>
 <body>
 
-    <h1>Operadores</h1>
-    
+    <h1>Operadores aritméticos</h1>
+    <!--
+        operadores binários
+        + 
+        -
+        *
+        /
+        %
+        **
+    -->
+
     <script>
-        let n1 = Number(window.prompt('Digite o número 1: '))
-        let n2 = Number(window.prompt('Digite o número 2: '))
-        let n3 = n1+n2
-        document.write("Total..: ", n3)
-        window.alert("Total -> " + n3)
+        let n1 = 5
+        let n2 = 2
+    // estou usando o console no browser para ver o resultado, mas posso usar o node. 
+        console.log(n1 + n2)
+        console.log(n1 - n2)
+        console.log(n1 * n2)
+        console.log(n1 / n2)
+        console.log(n1 % n2)
+        console.log(n1 ** n2)
+
+        //precedencia
+
+    /*
+    operator precedence
+    1. parenthesis ()
+    2. exponents (potencias) 
+    3. multiplication & division
+    4. addition & subtraction
     
+    ordem 
+    ()
+    **
+    *
+    /
+    %
+    + 
+    -
+
+    */
+
+    // 5 + 3 / 2
+    
+    console.log(5+3/2) // Resulta em 6.5
+
+        var a = 5 + 3
+        var b = a % 5
+        var c = 5 * b ** 2
+        var d = 10 - a / 2
+        var e = 6 * 2 / d
+        var f = b % e + 4 / e
+
+    // Auto-atribuições
+
+    var n = 3
+    n = n + 4
+    n = n - 5
+    n = n * 4
+    n = n / 2
+    n = n ** 2
+    n = n % 5
+
+    n = 10
+
+    // soma n mais o número da atribuições  
+    n += 4
+    n -= 2
+    n *= 2
+    n /= 2
+    n **= 2
+    n %= 5
+
+    // incremento
+
+    n = 10
+
+    n ++ // soma 1 
+    n -- // subtraí 1
+    
+    console.log(n)
+
     </script>
 </body>
 </html>
