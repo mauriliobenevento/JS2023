@@ -70,9 +70,11 @@ operator precedence
 */
 
 let result1 = 1 + 2 * (7); // resulta 15 pois faz na ordem de precedentes
-let result2 = (1 + 2 * (3 + 4)); // resulta 15 pois faz na ordem de precedentes
+let result2 = (2 + 2 * (3 + 4)); // resulta 15 pois faz na ordem de precedentes
 console.log(result1);
 console.log(result2);
+
+
 
 
 
