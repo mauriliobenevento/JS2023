@@ -1,0 +1,69 @@
+<!--
+    DOM
+    Document Objetic Model
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 009 - Progresso</title>
+    <style>
+        body {background-color: rgb(52, 80, 80); /* muito legal CSS assim */ 
+        color: rgb(250, 244, 244);
+        font: normal 20pt Arial;} 
+
+        h1 {
+            color: yellow;
+        }  
+    </style>
+
+</head>
+<body>
+
+     <!--
+        O qué DOM
+
+        É um conjuto de objetos e não funciona no Node.js 
+
+        É preciso fazer a árvore DOM iniciando em window. 
+
+        window -> location
+        window -> document -> html -> head (meta, title) e body (h1, p, div, etc)
+        window -> history
+
+        Tudo que aparece são elementos 
+
+        Os elementos podem ser Selecionados por: 
+        - por Marca
+        - por ID
+        - por Nome
+        - por Classe
+        - por Seletor
+    -->
+
+    <h1>DOM (Document Object Model)</h1>
+    <p> Primeiro paragrafo como teste de <strong>DOM</strong> </p>
+    <p> Resultados </p>
+    <div id="teste"> Marcando essa DIV como teste para o DOM</div>
+    <div id="teste2"> Marcando essa DIV como teste para o DOM</div>
+    
+    <script>
+        // por marcar ou tagname
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.writeln('Pegando o P0 -> '+p1.innerText) // não pega o negrito
+        window.document.writeln('Pegando o P0 -> '+p1.innerHTML) // pega o negrito
+        p1.style.color = 'Red'
+        var d = window.document.getElementById('teste')
+        d.style.background = 'green'
+
+        // por selector
+    
+        // quando for div representa com . 
+        // quando for class representa com #
+            
+    </script>
+</body>
+</html>
