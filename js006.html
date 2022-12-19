@@ -1,0 +1,127 @@
+<!--
+    js005.html - estou preservando o aprendizado anterior e vou completar aqui com o uso de variáveis. 
+    
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 005 - Progresso</title>
+    <style>
+        body {background-color: rgb(52, 80, 80); /* muito legal CSS assim */ 
+        color: rgb(250, 244, 244);
+        font: normal 20pt Arial;} 
+
+        h1 {
+            color: yellow;
+        }  
+    </style>
+
+</head>
+<body>
+
+    <h1>Operadores aritméticos Parte 2</h1>
+    <p> Relacionais, Lógicos e Ternário </p>
+    <!--
+        Relacionais
+        > 
+        <
+        >=
+        <=
+        ==
+        !=
+    -->
+
+
+    <!--
+        Ternários
+        > 
+        <
+        >=
+        <=
+        ==
+        !=
+    -->
+
+
+    <script>
+    // relacionais
+    console.log( 5 > 2)
+    console.log( 7 < 4)
+    console.log( 8 >= 8)
+    console.log( 9 <= 7)
+    console.log( 5 == 5)
+    console.log( 4 != 4)
+    
+    // verificando as precedencias entre aritméticos e relacionais (os aritméticos precisam ser primeiro)
+    console.log( 2 + 2 <= 3 ) // false
+    console.log( 2 + 2 <= 5 + 1) // true
+    console.log( 2 + 2 <= 5 + 1) // true
+
+   // relacionais de Identidade
+
+   console.log( 5 == 5) // true
+   console.log( 5 == '5') // true o JS analisa a mesma grandeza
+   console.log( 5 == "5") // true o JS analisa a mesma grandeza
+   x = 5
+   y = '5'
+   console.log( x == y) // true o JS analisa a mesma grandeza
+   console.log(typeof(x) == typeof(y)) // false, pois os tipos são diferentes
+   console.log( x !== y) // true, este é o desigual restrito
+
+  // Lógicos ------------------------
+  /*
+        Lógicos
+        !   = negação       
+        &&  = conjunção E   
+        ||  = disjunções OU
+  */
+  
+  // Negação
+  /*
+        true -> false
+        false -> true
+  */
+
+  console.log(! true ) // retorna -> false
+  console.log(! false ) // retorna -> true
+  
+
+  var a = 5
+  var b = 8
+  
+// conjunção - 2 valores binãrios
+  /*
+        true && true   = true
+        true && false  = false
+        false && true  = false
+        false && false = false
+
+  */
+
+  console.log(true && true) // retorna -> true
+  console.log(true && false) // retorna -> false
+  console.log(false && true) // retorna -> false
+  console.log(false && false) // retorna -> false
+
+// disjunção - 2 valores binãrios
+  /*
+        true || true   = true
+        true || false  = true
+        false || true  = true
+        false || false = false
+
+  */
+
+  console.log(true || true) // retorna -> true
+  console.log(true || false) // retorna -> true
+  console.log(false || true) // retorna -> true
+  console.log(false || false) // retorna -> false
+
+
+    </script>
+</body>
+</html>
