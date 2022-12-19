@@ -121,6 +121,39 @@
   console.log(false || true) // retorna -> true
   console.log(false || false) // retorna -> false
 
+/*
+Em uma expressão que tem operadora aritméticos, lógicos e relacionais 
+a ordem de precedencia é:
+1. Aritméticos
+2. Relacionais
+3. Lógicos
+4. E e OU
+
+*/
+var a = 3
+var b = 5
+
+console.log(a > b && b % 2 == 0)
+
+/*
+Geral da precedência
+
+1. Aritméticos
+2. Relacionais
+3. Lógicos: Não, E e OU
+4. Ternario é sempre o último a ser feito
+*/
+
+/*
+Ternário 
+? e : dentro da mesma expressão
+
+teste (lógico) ? true (se for verdade) : false (se for falso)
+
+exemplo: média >= 7.0 ? "Aprovado" : "Reprovado"
+
+*/
+
 
     </script>
 </body>
