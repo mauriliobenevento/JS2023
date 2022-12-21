@@ -7,26 +7,69 @@
     <title>DETRAN</title>
 </head>
 <body>
+    <style>
+    #txtvel{
+            font: normal 28pt Arial;
+            width: 100px;
+            text-align: center;
+    }       
+    
+    #verificar{
+        height: 80px;
+        max-width: 120px;
+        padding: 20%, 20%;
+        margin: auto;
+        background-color: rgb(0, 4, 255);
+        font: 18pt Arial;
+        color: white
+    }
+
+        
+    </style>
+
     <h1>Sistema de Multas</h1>
     Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h 
-    <input type="button" value="Verificar" onclick="calcular()">
+    <input type="button" value="Verificar" id="verificar" onclick="calcular()">
     <div id="res">
 
     </div>
    
    <script>
+
+        var a = window.document.getElementById('txtvel')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+       
+            
+
+        // fica global para todas as funções abaixo. 
+            
+        function entrar(){
+            a.innerText = "entrou"
+            res.style.background = 'yellow'
+            res.innerHTML = `<p>A Velocidade permitida é 60 km/h</p>`
+        }
+       
+        function clicar(){
+            a.innerText = "clicou"
+            a.style.background = 'grey'
+            res.innerHTML = `<p></p>`
+        }
+ 
         function calcular() {
             var txtv = window.document.querySelector('input#txtvel')
             var vel = Number(txtv.value)
             var res = window.document.querySelector('div#res')
            // res.innerHTML = `<p>Sua velocidade atual é de <strong> ${vel} </p>`
             
-            if (vel > 60)
-                res.innerHTML += `<p>Você ultrassou a velocidade permitida, a MULTA vai pra sua casa</p>`
+            if (vel <= 0)
+            res.innerHTML += `<p>Você está parado</p>`
+            else if (vel > 60)
+            res.innerHTML += `<p>Você ultrassou a velocidade permitida, a MULTA vai pra sua casa</p>`
             else 
             res.innerHTML += `<p>A velocidade do seu carro é ${vel} km por hora, continue a sua viagem em segurança</p>`
 
-            res.innerHTML += `<p> Sempre use o cinto de segurança!</p>`
+            res.innerHTML += `<h1><p> <strong>Sempre use o cinto de segurança!</strong></p></h1`
             
         }
 
