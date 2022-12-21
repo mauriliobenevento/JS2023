@@ -1,0 +1,78 @@
+<!--
+    DOM
+    Document Objetic Model
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 008 - Progresso</title>
+    <style>
+        body {background-color: rgb(52, 80, 80); /* muito legal CSS assim */ 
+        color: rgb(250, 244, 244);
+        font: normal 20pt Arial;} 
+
+        h1 {
+            color: yellow;
+        }  
+
+        div#area{
+            background: blue;
+            color: red;
+            width: 200px;
+           height: 200px;
+           line-height: 200px;
+           text-align: center; 
+        }
+
+    </style>
+
+</head>
+<body>
+
+     <!--
+        Vamos interagir com a DIV         
+        Funções são executadas quando ocorrer o evento. 
+
+        functon ação(parametro){}
+    -->
+
+    <h1>Eventos DOM (Document Object Model)</h1>
+    <div id="area">A DIV</div>
+
+    <script>
+        // Função do evento click
+
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseleave', sair)
+        a.addEventListener('mousewheel', rolar)
+            
+
+        // fica global para todas as funções abaixo. 
+            
+        function clicar(){
+            a.innerText = "clicou"
+            a.style.background = 'white'
+        }
+        function entrar(){
+            a.innerText = "entrou"
+            a.style.background = 'yellow'
+        }
+        function sair(){
+            a.innerText = "saiu"
+            a.style.background = 'blue'
+        }
+        function rolar(){
+            a.innerText = "Rolar"
+            a.style.background = 'grey'
+        }
+
+            
+    </script>
+</body>
+</html>
