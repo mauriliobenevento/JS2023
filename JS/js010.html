@@ -28,6 +28,8 @@
     </style>
 
     <h1>Sistema de Multas</h1>
+    <p>Ler dado de um input e testar a condicional IF <br><br></p>
+
     Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h 
     <input type="button" value="Verificar" id="verificar" onclick="calcular()">
     <div id="res">
@@ -39,6 +41,7 @@
         var a = window.document.getElementById('txtvel')
         a.addEventListener('click', clicar)
         a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseleave', sair)
        
             
 
@@ -48,6 +51,11 @@
             a.innerText = "entrou"
             res.style.background = 'yellow'
             res.innerHTML = `<p>A Velocidade permitida é 60 km/h</p>`
+        }
+        function sair(){
+            a.innerText = "saiu"
+            res.style.background = 'white'
+            res.innerHTML = `<p></p>`
         }
        
         function clicar(){
@@ -67,7 +75,7 @@
             else if (vel > 60)
             res.innerHTML += `<p>Você ultrassou a velocidade permitida, a MULTA vai pra sua casa</p>`
             else 
-            res.innerHTML += `<p>A velocidade do seu carro é ${vel} km por hora, continue a sua viagem em segurança</p>`
+            res.innerHTML += `<p>A velocidade do seu carro é ${vel} km/h, continue a sua viagem em segurança</p>`
 
             res.innerHTML += `<h1><p> <strong>Sempre use o cinto de segurança!</strong></p></h1`
             
