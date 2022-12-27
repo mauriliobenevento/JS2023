@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS 009 - Progresso</title>
+    <title>JS 007 - Progresso</title>
     <style>
         body {background-color: rgb(52, 80, 80); /* muito legal CSS assim */ 
         color: rgb(250, 244, 244);
@@ -52,9 +52,9 @@
     
     <script>
         // por marcar ou tagname
-        var p1 = window.document.getElementsByTagName('p')[0]
+        var p1 = window.document.getElementsByTagName('p')[0] // pega o primeiro paragrafo 
         window.document.writeln('Pegando o P0 -> '+p1.innerText) // não pega o negrito
-        window.document.writeln('Pegando o P0 -> '+p1.innerHTML) // pega o negrito
+        window.document.writeln('Pegando o P0 -> '+p1.innerHTML) // pega o negrito HTML
         p1.style.color = 'Red'
         var d = window.document.getElementById('teste')
         d.style.background = 'green'

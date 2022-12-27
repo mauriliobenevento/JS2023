@@ -41,37 +41,51 @@
     -->
 
     <h1>Eventos DOM (Document Object Model)</h1>
+    <p> Testando os eventos do Mouse e Function<br><br>
+        1. Entrar na área e mudar a cor<br>
+        2. Clicar e mudar a cor<br>
+        3. Clicar e segurar<br>
+        4. Deixar a área
+
+    </p>
+
     <div id="area">A DIV</div>
+    <!-- O teste se dará dentro dessa área da DIV acima, cujo estilos foram feito mais acima -->
 
     <script>
         // Função do evento click
-
         var a = window.document.getElementById('area')
         a.addEventListener('click', clicar)
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseleave', sair)
-        a.addEventListener('mousewheel', rolar)
+        a.addEventListener('mousewheel', rolar)        
+        a.addEventListener('mousedown', segurar)
+        
+
             
 
         // fica global para todas as funções abaixo. 
-            
-        function clicar(){
-            a.innerText = "clicou"
-            a.style.background = 'white'
-        }
         function entrar(){
             a.innerText = "entrou"
             a.style.background = 'yellow'
         }
-        function sair(){
-            a.innerText = "saiu"
-            a.style.background = 'blue'
+        function clicar(){
+            a.innerText = "clicou"
+            a.style.background = 'white'
         }
         function rolar(){
             a.innerText = "Rolar"
             a.style.background = 'grey'
         }
-
+        function sair(){
+            a.innerText = "saiu"
+            a.style.background = 'blue'
+        }
+        function segurar(){
+            a.innerText = "segurar"
+            a.style.background = 'black'
+        }
+       
             
     </script>
 </body>
