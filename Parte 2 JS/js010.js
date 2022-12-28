@@ -1,5 +1,7 @@
 // daqui pra frente utiliza-se node com saida no terminal
-// a saida de console utilizada no browser não funciona para JS. 
+// a saida de console utilizada no browser não funciona para JS.
+// Lembrar que para executar arquivos .js precisa do node exec usando o F8
+
 
 var vel = 72.4
 if (vel > 60)
