@@ -1,0 +1,23 @@
+body {
+    background-color: rgba(15, 65, 68, 0.384);
+    font: normal 15pt Arial;
+}  
+
+h1 {
+    color: rgba(20, 20, 1, 0.986);
+}  
+
+div#resp{
+    /* 
+    fundo e margens da div 
+    a centralização da DIV ficou no HTML
+    */
+    background: rgb(237, 237, 240);
+    width: 600px;
+    height: 300px;
+    text-align: center;
+}
+
+#Contar{
+    background: rgb(217, 255, 0);
+}
