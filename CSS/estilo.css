@@ -1,0 +1,96 @@
+
+.subscribe{
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 115px;
+  border-radius: 2px; 
+  transition: opacity 0.15s;
+  cursor: pointer;
+
+}
+
+.subscribe:hover{
+  opacity: 0.8;
+}
+
+.subscribe:active{
+  opacity: 0.5;
+}
+
+
+.twitter{
+  background-color: rgb(41, 120, 193);
+  color: white;
+  border: none;
+  border-color: rgb(41, 118,221);
+  border-radius: 22px;
+  height: 30px;
+  width: 70px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 1s;
+ 
+}
+
+.twitter:hover{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+  /*horizontal, vertical, blur, opacity  */
+}
+
+.twitter:active{
+opacity: 0.7;
+}
+
+
+.join{
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(41, 118,221);
+  height: 33px;
+  width: 80px;
+  color: rgb(41, 118,221);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: backgound-color 0.15s, color 1s;
+}
+
+.join:hover{
+  background-color: rgb(41, 118,221);
+  color: white;
+}
+
+.join:active{
+opacity: 0.7;
+}
+
+
+.uber{
+  background-color: rgb(31, 30, 31);
+  color: white;
+  font-weight: bold;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(41, 118,221);
+  height: 45px;
+  width: 120px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: backgound-color 0.15s, color 1s;
+}
+
+.amazon{
+  background-color:rgb(255, 209, 0);
+  color: black;
+  font-size: 12px;
+  border-width: 1px;
+  border: none;
+  height: 30px;
+  width: 140px;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: backgound-color 0.15s, color 1s;
+}
