@@ -1,0 +1,53 @@
+@import url(//db.onlinewebfonts.com/c/415c1cffdc1ffdf955cdd328ad4a4c87?family=Cheltenham);
+
+
+p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  }
+
+
+.journal1{
+  font-family: "Ancient Medium";
+  font-size: 18px; 
+  text-indent: 10%;
+  color:  rgb(18, 18, 18);
+  height: 22px;
+  line-height: 22px;
+  margin-right: 0px;
+  margin-left: 0x;
+  text-size-adjust:  100%;
+  vertical-align: baseline;
+  padding-left: 10px;
+}
+
+.journal1::after{
+  background-color:  rgb(230, 219, 219);
+  content:  ' ';
+  position: relative;
+  display: block;
+  height: 0.5px;
+  width: 30%;  
+}
+
+.titulo{
+  color: rgb(18, 18, 18);
+  font-size: 26px; 
+  font-family: "nyt-cheltenham", Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 200px;
+  line-height: 40px;
+  margin-block-end: 12px;
+  margin-block-start: 0px;
+  margin-inline-end: 12px;
+  margin-inline-start: 12px;
+  margin-left: 20px;
+  max-width: 600px;
+  position: relative;
+  text-align: left;
+  text-size-adjust: 100%;
+  vertical-align: baseline;
+  width: 410px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  }
