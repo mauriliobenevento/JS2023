@@ -1,0 +1,42 @@
+ /* 
+    https://www.w3schools.com/css/css3_borders.asp
+    https://supersimple.dev/exercises/buttons
+    https://www.youtube.com/watch?v=G3e-cpL7ofc
+    https://supersimple.dev/exercises/text
+    html entity checkmark
+
+    */
+
+body{
+  background-color: #2b536f;
+
+}
+
+.oferta{
+  font-size: 35px;
+  color: white;
+  margin-top: 0px;
+  width: 350px;
+  font-family: "gotham-bold";
+  margin-left: 250px;
+  margin-top: 300px;
+  }
+
+.visita{
+  color: white;
+  margin-left: 250px;
+}
+
+ .botao6{
+  background-color: #a92349;
+  color: white;
+  font-family: "gotham-bold";
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;  
+  text-transform: uppercase;
+  position: relative;
+  border: none;
+  padding: 15px;
+  margin-left: 250px;
+}
