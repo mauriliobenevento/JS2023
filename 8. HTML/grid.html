@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Practice</title>
+</head>
+<body>
+  
+<!--Criando o 1o grid no inline style abaixo dentro do Div principal-->
+<div style="
+display: grid;
+grid-template-columns: 100px 100px 200px; 
+">
+    <!--inline style no HTML - nao se usa em site real-->
+    <!--A seguir um Grid 2 x 3 -->
+    
+    <div style="background-color: lightblue;">Div 1</div>
+    <div style="background-color: lightcoral;">Div 2</div>
+    <div style="background-color: lightcyan;">Div 3 </div>
+    <div style="background-color: lightblue;">Div 4</div>
+    <div style="background-color: lightcoral;">Div 5</div>
+    <div style="background-color: lightcyan;">Div 6<p>Text div 6</p></div>
+    
+</div>
+
+<!--Criando o 2o grid no inline style abaixo dentro do Div principal-->
+<div style="
+margin-top: 30px;
+display: grid;
+grid-template-columns: 100px 100px; 
+">
+    <!--inline style no HTML - nao se usa em site real-->
+    <!--A seguir um Grid 2 x 2 -->
+    
+    <div style="background-color: lightblue;">Div 1</div>
+    <div style="background-color: lightcoral;">Div 2 <p>Text div 2</p></div>
+    <div style="background-color: lightblue;">Div 3 </div>
+    <div style="background-color: lightcoral;">Div 4 </div>
+</div>
+
+<!--Criando o 3o grid no inline style com fr = free space-->
+<div style="
+margin-top: 30px;
+display: grid;
+grid-template-columns: 100px 1fr; 
+">
+    <!--inline style no HTML - nao se usa em site real-->
+    <!--A seguir um Grid 2 x 2 -->
+    
+    <div style="background-color: lightblue;">Div 1</div>
+    <div style="background-color: lightcoral;">1fr </div>
+</div>
+
+<!--Criando o 4o grid no inline style com fr = free space-->
+<div style="
+margin-top: 30px;
+display: grid;
+grid-template-columns: 100px 1fr 2fr; 
+">
+    <!--inline style no HTML - nao se usa em site real-->
+    <!--A seguir um Grid 2 x 2 -->
+    
+    <div style="background-color: lightblue;">100px</div>
+    <div style="background-color: lightcoral;">1fr </div>
+    <div style="background-color: lightgreen;">2fr </div>
+</div>
+
+</body>
+</html>

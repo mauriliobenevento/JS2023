@@ -68,18 +68,18 @@
     }
 
     .video-author{
+      display: inline-block;
       margin-bottom: 4px;
+      width: 100px;
     }
 
     .dyoutube-checker{
       display: inline-block;
-      width: 40px;
-      vertical-align: top;
+      width: 11px;
       border-radius: 50px;
     }
     
     .ichecker{
-      display: inline-block;
-      width: 11px;
+      width: 100%;
     }
     
